@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="dist/style.css">
+  <title>Sneakers</title>
+</head>
+
+<body class="font-custom">
+  <nav class="bg-white">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="flex h-20 items-center justify-between border-b">
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <img src="./img/logo.svg" alt="Sneakers' Company">
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+
+              <a href="#" class=" text-zinc-500 hover:border-b-2 hover:border-sky-800 px-3 text-sm font-medium"
+                aria-current="page">Collection</a>
+
+              <a href="#" class="text-zinc-500 px-3 text-sm font-medium">Men</a>
+
+              <a href="#" class="text-zinc-500 px-3 text-sm font-medium">Women</a>
+
+              <a href="#" class="text-zinc-500 px-3 text-sm font-medium">About</a>
+
+              <a href="#" class="text-zinc-500 px-3 text-sm font-medium">Contact</a>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-4 flex items-center md:ml-6">
+            <button type="button" class="rounded-full p-1">
+              <img src="./img/icon-cart.svg" alt="">
+            </button>
+
+            <!-- Profile dropdown -->
+            <div class="relative ml-3">
+              <div>
+                <button type="button" class="flex max-w-xs items-center rounded-full" id="user-menu-button"
+                  aria-expanded="false" aria-haspopup="true">
+                  <img class="h-8 w-8 rounded-full" src="./img/image-avatar.png" alt="">
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="-mr-2 flex md:hidden">
+          <!-- Mobile menu button -->
+          <button type="button"
+            class="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+            aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <!-- Menu open: "hidden", Menu closed: "block" -->
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!-- Menu open: "block", Menu closed: "hidden" -->
+            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Shoes -->
+  <div class="container m-auto grid lg:grid-cols-2 py-20">
+    <div class="flex flex-col">
+      <img src="./img/image-product-1.jpg" class="w-4/6 rounded-lg" alt="">
+      <div class="flex flex-row gap-x-6">
+        <img src="./img/image-product-1.jpg" class="w-28 rounded-lg" alt="">
+        <img src="./img/image-product-2.jpg" class="w-28 rounded-lg" alt="">
+        <img src="./img/image-product-3.jpg" class="w-28 rounded-lg" alt="">
+        <img src="./img/image-product-4.jpg" class="w-28 rounded-lg" alt="">
+      </div>
+    </div>
+    <!-- Description -->
+    <div class="flex flex-col gap-y-4">
+      <p class="font-semibold uppercase text-orange-500">sneaker company</p>
+      <h1 class="font-bold text-4xl">Fall Limited Sneakers</h1>
+      <p class="text-gray-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, enim? Atque, laborum
+        non. Impedit, vero quis. Consequuntur magnam reprehenderit numquam in sapiente fugiat, vero enim, impedit veniam
+        distinctio consectetur modi.</p>
+      <div class="flex items-center gap-4">
+        <p class="font-bold text-2xl">$125.00</p>
+        <div class="bg-orange-100 rounded px-1">
+          <p class="font-bold text-orange-500 text-base">50&#37;</p>
+        </div>
+      </div>
+      <p class="font-medium text-gray-400 line-through">$250.00</p>
+    </div>
+  </div>
+</body>
+
+</html>
